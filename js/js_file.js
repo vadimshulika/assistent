@@ -14,7 +14,7 @@
       if(result == 'Представься' || result == 'Как тебя зовут'){
         synth.speak (name_assistent);
       }
-      //alert('Вы сказали: ' + result[0].transcript);
+      alert('Вы сказали: ' + result[0].transcript);
     } else {
       console.log('Промежуточный результат: ', result[0].transcript);
     }
