@@ -21,7 +21,7 @@
   };
 
   function speech () {
-    synth.speak (utterance);
+    //synth.speak (utterance);
     // Начинаем слушать микрофон и распознавать голос
     recognizer.start();
   }
