@@ -14,6 +14,10 @@
       if(result[0].transcript == 'Представься' || result[0].transcript == 'Как тебя зовут'){
         synth.speak(name_assistent);
       }
+      if(result[0].transcript == 'Сколько сейчас времени' || result[0].transcript == 'Который сейчас час' || 
+      result[0].transcript == 'Время' || result[0].transcript == 'Назови время'){
+        synth.speak(name_assistent);
+      }
       alert('Вы сказали: ' + result[0].transcript);
     } else {
       console.log('Промежуточный результат: ', result[0].transcript);
@@ -27,10 +31,13 @@
   }
 
   var synth = window.speechSynthesis;
-  //var utterance = new SpeechSynthesisUtterance('Чем я могу вам помочь?');
+  var utterance = new SpeechSynthesisUtterance('Чем я могу вам помочь?');
 
   //Ответы
-  var name_assistent = new SpeechSynthesisUtterance('Меня зовут Стенчик'); 
+  var name_assistent = new SpeechSynthesisUtterance('Меня зовут Стенчик');
+
+  var now = new Date();
+  var real_time = new SpeechSynthesisUtterance(now); 
 
   function talk () {
     
