@@ -27,7 +27,7 @@
   }
 
   var synth = window.speechSynthesis;
-  var utterance = new SpeechSynthesisUtterance('Чем я могу вам помочь?');
+  //var utterance = new SpeechSynthesisUtterance('Чем я могу вам помочь?');
 
   //Ответы
   var name_assistent = new SpeechSynthesisUtterance('Меня зовут Стенчик'); 
