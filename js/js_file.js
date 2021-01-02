@@ -16,7 +16,7 @@
       }
       if(result[0].transcript == 'Сколько сейчас времени' || result[0].transcript == 'Который сейчас час' || 
       result[0].transcript == 'Время' || result[0].transcript == 'Назови время'){
-        synth.speak(name_assistent);
+        synth.speak(real_time);
       }
       alert('Вы сказали: ' + result[0].transcript);
     } else {
